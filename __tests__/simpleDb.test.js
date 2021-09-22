@@ -2,7 +2,7 @@ import { rm, mkdir } from 'fs/promises';
 import SimpleDb from '../lib/simpleDb';
 
 describe('simple db', () => {
-  const rootDir = './__tests__/store';
+  const rootDir = '../__tests__/store';
   
   beforeEach(async () => {
     await rm(rootDir, { force: true, recursive: true });
